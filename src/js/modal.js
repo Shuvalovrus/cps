@@ -1,7 +1,10 @@
 const switchModal = (event, modal) => {
   const page = document.querySelector('.page')
+  const menu = document.querySelector('.side-menu')
 
-  page.classList.toggle('page--close')
+  if (!menu.classList.contains('side-menu--open'))
+    page.classList.toggle('page--close')
+
   modal.classList.toggle('modal--active')
 }
 

@@ -13,7 +13,7 @@
 
   background-color: $white;
 
-  z-index: 30;
+  z-index: 50;
   @media screen and ($screen-tablet) {
     box-shadow: 16px 0 52px 0 rgba($color: #0e185033, $alpha: 0.2),
       -2px 4px 0 0 rgba($color: #454f7e05, $alpha: 0.02);
@@ -31,8 +31,6 @@
     left: 0;
 
     justify-content: space-between;
-
-    z-index: 20;
   }
   &__navigation {
     margin-bottom: 65px;

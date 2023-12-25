@@ -4,15 +4,25 @@
   height: 100%;
 
   top: 0;
-  right: -100%;
+  right: -200%;
+  background-color: rgba(255red, 255, 255, 0);
+  z-index: 100;
 
-  opacity: 0;
-
-  background-color: $white;
-
-  z-index: 30;
-  padding-top: 25px;
+  &__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: 110;
+    background-color: rgba(255red, 255, 255, 1);
+    border-left: 1px solid $frosted-mint;
+    @media screen and ($screen-tablet) {
+      max-width: 440px;
+    }
+  }
   &__button {
+    align-self: flex-start;
     margin-bottom: 30px;
   }
   &__title {
@@ -25,13 +35,8 @@
     gap: 15px;
   }
   &--active {
-    display: block;
-
     right: 0;
-    opacity: 1;
-  }
-  @media screen and ($screen-tablet) {
-    max-width: 440px;
+    background-color: rgba(255red, 255, 255, 0.8);
   }
   &__consent {
     font-size: $font-size-tiny;
@@ -43,6 +48,7 @@
   }
   &__close {
     margin-bottom: 25px;
+    align-self: flex-start;
     @media screen and ($screen-tablet) {
       position: absolute;
 

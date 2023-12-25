@@ -1,15 +1,9 @@
-.feedback-modal {
+.call-modal {
   &__container {
     display: flex;
     flex-direction: column;
     padding-top: 25px;
     height: 100%;
     position: relative;
-  }
-  &__message {
-    height: 120px;
-  }
-  &__title {
-    margin-bottom: 25px;
   }
 }

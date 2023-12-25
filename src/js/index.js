@@ -42,7 +42,6 @@ const initialize = () => {
   feedBackModalCloseBtn.addEventListener('click', (event) =>
     switchModal(event, feedBackModal)
   )
-  // callModalButton.addEventListener('click')
 
   page.addEventListener('click', menuSwitcher)
 
@@ -50,8 +49,6 @@ const initialize = () => {
     el.addEventListener('click', (event) => {
       const button = event.currentTarget
       const slides = Array.from(button.parentElement.children[0].children)
-
-      // let showMoreButtonText = showMoreButton.querySelector('.button__text')
 
       let toSwitchIndex = button.classList.contains('swiper-brands__button')
         ? toSwitchIndexBrands
