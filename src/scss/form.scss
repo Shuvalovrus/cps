@@ -1,0 +1,15 @@
+.form {
+  &__input {
+    // width: 100%;
+
+    padding: 12px 15px;
+
+    color: $bombay;
+
+    font-size: $font-size-small;
+    line-height: $line-height-large;
+
+    border-radius: 8px;
+    border: 1px solid $gallery;
+  }
+}

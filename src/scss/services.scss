@@ -1,0 +1,10 @@
+.services {
+  right: 15px;
+  top: 0;
+
+  &__button {
+    &:nth-child(1) {
+      margin-right: 15px;
+    }
+  }
+}

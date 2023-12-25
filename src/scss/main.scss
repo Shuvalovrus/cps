@@ -1,0 +1,19 @@
+.main {
+  padding-top: 25px;
+  margin-bottom: 40px;
+
+  background-color: $alabaster;
+  @media screen and ($screen-desktop) {
+    margin-left: 320px;
+  }
+  &__title {
+    margin-bottom: 30px;
+
+    @media screen and ($screen-desktop) {
+      margin-bottom: 20px;
+    }
+  }
+  &__tabs {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,141 @@
+$white: #ffffff;
+$black: #000000;
+
+$radical-red: #ff3e79;
+$shark: #1b1c21;
+$bright-turquoise: #41f6d7;
+$aero-blue: #b8ffec;
+$jumbo: #7e7e82;
+$alabaster: #f8f8f8;
+$gallery: #eaeaea;
+$bombay: #b5b6bc;
+$frosted-mint: #d9fff5;
+$color-text: $jumbo;
+$background-color: $alabaster;
+
+// FONTS
+$font-size-base: 16px;
+
+$font-path: '../fonts';
+
+$font-family-custom: 'TTLakes';
+$font-family-default: sans-serif;
+
+$font-family: $font-family-custom, $font-family-default;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$font-size-large: 28px;
+$font-size-big: 24px;
+$font-size-medium: 18px;
+$font-size-small: 16px;
+$font-size-tiny: 14px;
+$font-size-miniature: 12px;
+
+$line-height-huge: 40px;
+$line-height-big: 32px;
+$line-height-large: 24px;
+$line-height-medium: 20px;
+$line-height-small: 18px;
+$line-height-tiny: 16px;
+
+// BREAKPOINTS
+$screen-desktop: '(min-width: 1366px)';
+$screen-desktop-small: '(min-width: 1120px)';
+$screen-tablet: '(min-width: 768px)';
+$screen-phone: '(max-width: 290px)';
+
+// LAYOUT
+$width-container: 1070px;
+$padding-container: 15px;
+
+// FONT CONNECTION
+@font-face {
+  $font-name: '#{$font-family-custom}-Regular';
+  font-family: $font-family-custom;
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  src: url('#{$font-path}/#{$font-name}.woff'),
+    url('#{$font-path}/#{$font-name}.ttf');
+}
+@font-face {
+  $font-name: '#{$font-family-custom}-Medium';
+  font-family: $font-family-custom;
+  font-weight: $font-weight-medium;
+  font-style: normal;
+  src: url('#{$font-path}/#{$font-name}.woff'),
+    url('#{$font-path}/#{$font-name}.ttf');
+}
+@font-face {
+  $font-name: '#{$font-family-custom}-Bold';
+  font-family: $font-family-custom;
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  src: url('#{$font-path}/#{$font-name}.woff'),
+    url('#{$font-path}/#{$font-name}.ttf');
+}
+
+// COMMON
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+
+  transition: all 0.2s ease-in-out;
+  font-family: $font-family;
+}
+
+.container {
+  width: 100%;
+  max-width: $width-container + $padding-container;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $padding-container;
+  padding-right: $padding-container;
+}
+.hidden {
+  position: absolute;
+  top: -100%;
+  opacity: 0;
+}
+ul {
+  list-style: none;
+
+  padding: 0;
+}
+
+a {
+  color: $shark;
+
+  text-decoration: none;
+}
+// /COMMON
+@import '../scss/page.scss';
+@import '../scss/about.scss';
+@import '../scss/button.scss';
+@import '../scss/contacts.scss';
+@import '../scss/header.scss';
+@import '../scss/main.scss';
+@import '../scss/navigation.scss';
+@import '../scss/services.scss';
+@import '../scss/side-menu.scss';
+@import '../scss/swiper.scss';
+@import '../scss/tabs.scss';
+@import '../scss/section-title.scss';
+@import '../scss/types.scss';
+@import '../scss/brands.scss';
+@import '../scss/brand-card.scss';
+@import '../scss/type-card.scss';
+@import '../scss/price-card.scss';
+@import '../scss/prices.scss';
+@import '../scss/footer.scss';
+@import '../scss/title.scss';
+@import '../scss/modal.scss';
+@import '../scss/form.scss';
+@import '../scss/feedback-modal.scss';

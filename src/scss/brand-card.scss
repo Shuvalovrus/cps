@@ -1,0 +1,35 @@
+.brand-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 72px;
+  padding: 15px 20px;
+
+  background-color: $white;
+  border: 1px solid $gallery;
+  border-radius: 5px;
+
+  @media screen and ($screen-tablet) {
+    width: 100%;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid $radical-red;
+
+    background-color: $white;
+
+    & > .button__icon {
+      width: auto;
+      height: auto;
+
+      background-color: $white;
+    }
+  }
+
+  &__image {
+    flex: 0 0 auto;
+  }
+}

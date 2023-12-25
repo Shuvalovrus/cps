@@ -1,0 +1,63 @@
+.price-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+
+  background-color: $white;
+  border-radius: 5px;
+
+  align-items: flex-start;
+  &__title {
+    @media screen and ($screen-tablet) {
+      display: none;
+    }
+  }
+  &__title {
+    font-size: $font-size-tiny;
+    line-height: $line-height-tiny;
+    font-weight: $font-weight-medium;
+    color: $jumbo;
+
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: $font-size-tiny;
+    margin-bottom: 15px;
+  }
+  &__button {
+    position: absolute;
+    bottom: 15px;
+    align-self: flex-end;
+    flex: 0 1 auto;
+    @media screen and ($screen-tablet) {
+      position: static;
+    }
+  }
+  &__service {
+    @media screen and ($screen-tablet) {
+      flex: 0 1 54%;
+    }
+  }
+  &__price {
+    @media screen and ($screen-tablet) {
+      flex: 0 1 14%;
+    }
+  }
+  &__term {
+    @media screen and ($screen-tablet) {
+      flex: 0 1 14.5%;
+    }
+  }
+  @media screen and ($screen-tablet) {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 0;
+    border-bottom: 1px solid $gallery;
+  }
+}

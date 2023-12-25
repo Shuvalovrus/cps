@@ -1,0 +1,38 @@
+.brands {
+  &__swiper {
+    height: 115px;
+
+    @media screen and ($screen-tablet) {
+      height: auto;
+
+      &-wrapper {
+        --gap: 30px;
+        --elements: 3;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: var(--gap);
+
+        margin-bottom: 25px;
+      }
+
+      &-slide {
+        width: calc(
+          (100% - (var(--elements) - 1) * var(--gap)) / (var(--elements))
+        );
+      }
+    }
+
+    @media screen and ($screen-desktop) {
+      &-wrapper {
+        --elements: 4;
+      }
+    }
+
+    &-slide {
+      max-height: 72px;
+    }
+  }
+}

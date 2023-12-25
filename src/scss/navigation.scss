@@ -1,0 +1,37 @@
+.navigation {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__link {
+    display: inline-block;
+
+    position: relative;
+
+    color: $shark;
+
+    line-height: $line-height-big;
+    &:hover {
+      color: $jumbo;
+    }
+    &--active {
+      color: $jumbo;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: -25px;
+
+        content: '';
+
+        width: 4px;
+        height: 100%;
+
+        background-color: $bright-turquoise;
+
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 30%;
+      }
+    }
+  }
+}

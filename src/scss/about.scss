@@ -1,0 +1,85 @@
+.about {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  &__services {
+    display: none;
+
+    @media screen and ($screen-desktop) {
+      display: flex;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button {
+    margin-top: 15px;
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+  }
+
+  &__content {
+    @media screen and ($screen-tablet) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__paragraph {
+    position: relative;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+    color: $shark;
+    white-space: pre-wrap;
+
+    overflow: hidden;
+    max-height: 162px;
+
+    @media screen and ($screen-tablet) {
+      line-height: $line-height-medium;
+    }
+  }
+
+  &__image {
+    width: calc(100% + #{$padding-container * 2});
+    height: auto;
+    margin-left: -$padding-container;
+    margin-right: -$padding-container;
+
+    @media screen and ($screen-tablet) {
+      width: 100%;
+      height: auto;
+      max-height: 247px;
+      margin-left: 0;
+      margin-right: 0;
+
+      border-radius: 6px;
+    }
+  }
+
+  &__column:nth-child(1) {
+    margin-bottom: 15px;
+
+    @media screen and ($screen-tablet) {
+      flex: 0 1 44%;
+      margin-bottom: 0;
+    }
+
+    @media screen and ($screen-desktop-small) {
+      flex: 0 1 46%;
+    }
+  }
+
+  &__column:nth-child(2) {
+    flex: 0 1 50%;
+    margin-bottom: 15px;
+  }
+}

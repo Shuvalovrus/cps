@@ -1,0 +1,52 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  right: -100%;
+
+  opacity: 0;
+
+  background-color: $white;
+
+  z-index: 30;
+  padding-top: 25px;
+  &__button {
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+  }
+  &--active {
+    display: block;
+
+    right: 0;
+    opacity: 1;
+  }
+  @media screen and ($screen-tablet) {
+    max-width: 440px;
+  }
+  &__consent {
+    font-size: $font-size-tiny;
+    line-height: $line-height-tiny;
+    font-weight: $font-weight-medium;
+  }
+  &__link {
+    color: $radical-red;
+  }
+  &__close {
+    margin-bottom: 25px;
+    @media screen and ($screen-tablet) {
+      position: absolute;
+
+      left: -70px;
+    }
+  }
+}

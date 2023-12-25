@@ -1,0 +1,84 @@
+.prices {
+  position: relative;
+
+  &__disclamer {
+    font-size: $font-size-tiny;
+    line-height: $line-height-medium;
+    letter-spacing: 0.2px;
+
+    word-wrap: break-word;
+
+    max-width: 420px;
+  }
+  &__comercial {
+    line-height: $line-height-large;
+    font-weight: $font-weight-medium;
+
+    letter-spacing: 0.2px;
+
+    text-align: left;
+    & > .button__text {
+      text-wrap: wrap;
+      max-width: none;
+    }
+    & .button__icon {
+      border-radius: 0;
+      display: inline-block;
+
+      width: auto;
+      height: auto;
+
+      background-color: inherit;
+      max-width: none;
+      margin-left: 10px;
+    }
+    &:hover > .button__icon {
+      transform: none;
+    }
+  }
+  &__header {
+    display: none;
+    border: none;
+    color: $jumbo;
+
+    @media screen and ($screen-tablet) {
+      display: flex;
+      background-color: inherit;
+      & > .price-card__title {
+        display: flex;
+        &:first-child {
+          flex: 0 1 54%;
+        }
+        &:nth-child(2) {
+          flex: 0 1 14%;
+        }
+        &:nth-child(3) {
+          flex: 0 1 14.5%;
+        }
+      }
+    }
+  }
+  &__swiper {
+    height: 260px;
+    @media screen and ($screen-tablet) {
+      background: linear-gradient(
+        to bottom,
+        $alabaster 0%,
+        $alabaster 65px,
+        $white 65px,
+        $white 100%
+      );
+      margin-bottom: 30px;
+    }
+    &-wrapper {
+      @media screen and ($screen-tablet) {
+        padding: 0 15px 0 15px;
+      }
+    }
+    @media screen and ($screen-tablet) {
+      height: auto;
+    }
+    @media screen and ($screen-tablet) {
+    }
+  }
+}

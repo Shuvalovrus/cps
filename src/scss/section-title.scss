@@ -1,0 +1,14 @@
+.section-title {
+  padding: 15px 0;
+  margin-bottom: 15px;
+
+  background: linear-gradient(to right, $alabaster 20%, $white 35%);
+
+  &__text {
+    color: $color-text;
+
+    font-size: $font-size-medium;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-large;
+  }
+}

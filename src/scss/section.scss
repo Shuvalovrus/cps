@@ -1,0 +1,13 @@
+.section {
+  &__title {
+    color: $color-text;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-large;
+
+    padding: 15px 0;
+    margin-bottom: 15px;
+
+    background-color: $white;
+  }
+}

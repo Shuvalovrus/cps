@@ -1,0 +1,40 @@
+.type-card {
+  position: relative;
+
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 15px;
+
+  background-color: $white;
+  border: 1px solid $gallery;
+  border-radius: 5px;
+
+  &__text {
+    font-weight: $font-weight-medium;
+  }
+
+  @media screen and ($screen-tablet) {
+    width: 100%;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+
+    align-self: flex-end;
+
+    border: 2px solid $radical-red;
+
+    background-color: $white;
+    & > .button__icon {
+      width: auto;
+      height: auto;
+
+      background-color: $white;
+    }
+  }
+}

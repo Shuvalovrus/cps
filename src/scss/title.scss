@@ -1,0 +1,23 @@
+.title {
+  margin: 0;
+
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-huge;
+  &::before {
+    width: 4px;
+    height: 40px;
+
+    position: absolute;
+    left: 0 !important;
+
+    display: inline-block;
+
+    content: '';
+
+    background-color: $bright-turquoise;
+
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+  }
+}
