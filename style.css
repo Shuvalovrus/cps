@@ -68,7 +68,7 @@ a {
       height: 100%;
       background-color: #ffffff;
       opacity: 0.95;
-      z-index: 10; }
+      z-index: 40; }
 
 .about {
   position: relative;
@@ -263,7 +263,7 @@ a {
       top: 19px; }
     .header__menu--open {
       position: absolute;
-      z-index: 30;
+      z-index: 55;
       left: 15px; }
       .header__menu--open .middle {
         display: none; }
@@ -369,7 +369,7 @@ a {
   padding-left: 25px;
   padding-right: 25px;
   background-color: #ffffff;
-  z-index: 30; }
+  z-index: 50; }
   @media screen and ((min-width: 768px)) {
     .side-menu {
       box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 4px 0 0 rgba(69, 79, 126, 0.02);
@@ -382,8 +382,7 @@ a {
       box-shadow: none; } }
   .side-menu--open {
     left: 0;
-    justify-content: space-between;
-    z-index: 20; }
+    justify-content: space-between; }
   .side-menu__navigation {
     margin-bottom: 65px; }
     @media screen and ((min-width: 1366px)) {
@@ -752,12 +751,23 @@ a {
   width: 100%;
   height: 100%;
   top: 0;
-  right: -100%;
-  opacity: 0;
-  background-color: #ffffff;
-  z-index: 30;
-  padding-top: 25px; }
+  right: -200%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 100; }
+  .modal__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: 110;
+    background-color: white;
+    border-left: 1px solid #d9fff5; }
+    @media screen and ((min-width: 768px)) {
+      .modal__content {
+        max-width: 440px; } }
   .modal__button {
+    align-self: flex-start;
     margin-bottom: 30px; }
   .modal__title {
     margin-bottom: 25px; }
@@ -766,12 +776,8 @@ a {
     flex-direction: column;
     gap: 15px; }
   .modal--active {
-    display: block;
     right: 0;
-    opacity: 1; }
-  @media screen and ((min-width: 768px)) {
-    .modal {
-      max-width: 440px; } }
+    background-color: rgba(255, 255, 255, 0.8); }
   .modal__consent {
     font-size: 14px;
     line-height: 16px;
@@ -779,7 +785,8 @@ a {
   .modal__link {
     color: #ff3e79; }
   .modal__close {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    align-self: flex-start; }
     @media screen and ((min-width: 768px)) {
       .modal__close {
         position: absolute;
@@ -793,8 +800,25 @@ a {
   border-radius: 8px;
   border: 1px solid #eaeaea; }
 
+.feedback-modal__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  height: 100%;
+  position: relative; }
+
 .feedback-modal__message {
   height: 120px; }
+
+.feedback-modal__title {
+  margin-bottom: 25px; }
+
+.call-modal__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  height: 100%;
+  position: relative; }
 
 
 /*# sourceMappingURL=style.css.map*/
