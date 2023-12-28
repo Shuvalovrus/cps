@@ -17,6 +17,9 @@
     z-index: 110;
     background-color: rgba(255red, 255, 255, 1);
     border-left: 1px solid $frosted-mint;
+
+    box-shadow: 16px 0px 52px 0px #0e185033;
+
     @media screen and ($screen-tablet) {
       max-width: 440px;
     }

@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  max-width: $width-container + $padding-container;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $padding-container;
+  padding-right: $padding-container;
+  @media screen and ($screen-desktop) {
+    max-width: none;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}

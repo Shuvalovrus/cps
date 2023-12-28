@@ -1,14 +1,17 @@
 .section-title {
   padding: 15px 0;
-  margin-bottom: 15px;
-
+  margin-bottom: 24px;
+  border-top: 1px solid $frosted-mint;
   background: linear-gradient(to right, $alabaster 20%, $white 35%);
 
   &__text {
+    margin: 0;
+
     color: $color-text;
 
     font-size: $font-size-medium;
     font-weight: $font-weight-regular;
     line-height: $line-height-large;
+    text-transform: uppercase;
   }
 }

@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
   }
 
   &__button {
@@ -35,13 +36,17 @@
 
   &__paragraph {
     position: relative;
+
+    max-height: 123px;
+    margin: 0;
+    margin-bottom: 13px;
+
     font-size: $font-size-small;
     line-height: $line-height-small;
     color: $shark;
     white-space: pre-wrap;
 
     overflow: hidden;
-    max-height: 162px;
 
     @media screen and ($screen-tablet) {
       line-height: $line-height-medium;
@@ -56,8 +61,7 @@
 
     @media screen and ($screen-tablet) {
       width: 100%;
-      height: auto;
-      max-height: 247px;
+      height: 100%;
       margin-left: 0;
       margin-right: 0;
 
@@ -74,12 +78,12 @@
     }
 
     @media screen and ($screen-desktop-small) {
-      flex: 0 1 46%;
+      flex: 0 1 53%;
     }
   }
 
   &__column:nth-child(2) {
-    flex: 0 1 50%;
+    flex: 0 1 43%;
     margin-bottom: 15px;
   }
 }

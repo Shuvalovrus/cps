@@ -3,27 +3,26 @@
   top: 0;
   bottom: 0;
   left: -100%;
-  flex-direction: column;
+  z-index: 50;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
-
   padding-left: 25px;
   padding-right: 25px;
 
   background-color: $white;
 
-  z-index: 50;
   @media screen and ($screen-tablet) {
+    width: 320px;
+
     box-shadow: 16px 0 52px 0 rgba($color: #0e185033, $alpha: 0.2),
       -2px 4px 0 0 rgba($color: #454f7e05, $alpha: 0.02);
-    width: 320px;
   }
   @media screen and ($screen-desktop) {
     left: 0;
-
-    display: flex;
-    height: auto;
 
     box-shadow: none;
   }
@@ -32,17 +31,13 @@
 
     justify-content: space-between;
   }
-  &__navigation {
-    margin-bottom: 65px;
-    @media screen and ($screen-desktop) {
-      margin-bottom: 230px;
-    }
-  }
   &__header {
     display: flex;
     justify-content: space-between;
+
     & .header__logo {
       margin-left: 45px;
+
       @media screen and ($screen-desktop) {
         margin-left: 0;
       }
@@ -51,6 +46,7 @@
 
   &__menu-button {
     margin-right: 15px;
+
     @media screen and ($screen-desktop) {
       display: none;
     }

@@ -16,4 +16,14 @@
   &__tabs {
     margin-bottom: 15px;
   }
+
+  & section {
+    margin-bottom: 24px;
+    @media screen and ($screen-tablet) {
+      margin-bottom: 32px;
+    }
+    @media screen and ($screen-desktop) {
+      margin-bottom: 50px;
+    }
+  }
 }

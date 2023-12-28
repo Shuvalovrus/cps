@@ -44,6 +44,11 @@ const initialize = () => {
   )
 
   page.addEventListener('click', menuSwitcher)
+  page.addEventListener('click', (event) => {
+    if (event.target.classList.contains('modal--active')) {
+      switchModal(event, event.target)
+    }
+  })
 
   showMoreButtons.forEach((el) =>
     el.addEventListener('click', (event) => {

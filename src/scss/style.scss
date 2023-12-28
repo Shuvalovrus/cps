@@ -90,15 +90,6 @@ html {
   font-family: $font-family;
 }
 
-.container {
-  width: 100%;
-  max-width: $width-container + $padding-container;
-
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: $padding-container;
-  padding-right: $padding-container;
-}
 .hidden {
   position: absolute;
   top: -100%;
@@ -117,6 +108,7 @@ a {
 }
 // /COMMON
 @import '../scss/page.scss';
+@import '../scss/container.scss';
 @import '../scss/about.scss';
 @import '../scss/button.scss';
 @import '../scss/contacts.scss';
